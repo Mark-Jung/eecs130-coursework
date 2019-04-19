@@ -10,16 +10,12 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 0.3fr;
    grid-template-rows: auto;
-   grid-template-areas: "card1 card2 card3 sidebar";
-   min-height: 80vh;
+   grid-template-areas: 
+      "card1 card2 card3 sidebar"
+      "main main main .";
+   min-height: 90vh;
 }
-.row2 {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 0.3fr;
-   grid-template-rows: auto;
-   grid-template-areas: "main main main sidebar";
-   min-height: 10vh;
-}
+
 
 .menu1 {
    grid-area: header1;
@@ -38,7 +34,8 @@
 }
 .sidebar {
    grid-area: sidebar;
-   backround-color: "blue";
+   background-color: blue;
+   padding-top: 80vh;
 }
 .main {
    grid-area: main;
