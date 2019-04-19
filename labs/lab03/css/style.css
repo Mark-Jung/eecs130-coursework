@@ -38,6 +38,7 @@
 }
 .sidebar {
    grid-area: sidebar;
+   backround-color: "blue";
 }
 .main {
    grid-area: main;
