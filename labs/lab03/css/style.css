@@ -1,0 +1,50 @@
+.row0 {
+   display: grid;
+   grid-template-columns: 2fr 1fr 0.2fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas:
+      "header1 . header2 header2";
+   min-height: 10vh;
+}
+.row1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 0.3fr;
+   grid-template-rows: auto;
+   grid-template-areas: "card1 card2 card3 sidebar";
+   min-height: 80vh;
+}
+.row2 {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 0.3fr;
+   grid-template-rows: auto;
+   grid-template-areas: "main main main sidebar";
+   min-height: 10vh;
+}
+
+.menu1 {
+   grid-area: header1;
+}
+.menu2 {
+   grid-area: header2;
+}
+.card1 {
+   grid-area: card1;
+}
+.card2 {
+   grid-area: card2;
+}
+.card3 {
+   grid-area: card3;
+}
+.sidebar {
+   grid-area: sidebar;
+}
+.main {
+   grid-area: main;
+}
+
+
+
+@media (max-width: 1024px) {
+   /* tablet layout here */
+}
