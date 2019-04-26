@@ -1,0 +1,9 @@
+.storyContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+       "story story story";
+    min-height: 90vh;
+}
+

@@ -1,0 +1,100 @@
+
+.header {
+    background-color: #00C1BF; 
+    padding:2%;
+}
+.title {
+    font-family: sans-serif;
+    font-weight: 100;
+    background-color: #00C1BF;
+}
+.navigateLink {
+    color: grey;
+}
+.eyeFriendly {
+    color: #7FC95D;
+}
+.featuredPic {
+    width: 20vw;
+    height: 40vh;
+}
+.navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+       "navigateLink navigateLink navigateLink navigateLink";
+    min-height: 10vh;
+}
+.featuredContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+       "featuredCard featuredCard featuredCard"
+       "featuredCard featuredCard featuredCard";
+    min-height: 90vh;
+}
+.authorPicDisc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+       "disc authorPic .";
+    min-height: 40vh;
+}
+.authorWorkds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+       "featuredCard featuredCard featuredCard";
+    min-height: 50vh;
+}
+.disc {
+    color: grey;
+}
+.authorPic {
+    float:right;
+    margin-left: 16px;
+    margin-bottom: 10px; 
+    max-width: 400px; 
+    max-height: 600px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navigateLink {
+        color: grey;
+        font-size: 30px;
+    }
+    .featuredPic {
+        width: 30vw;
+        height: 20vh;
+    }
+    .featuredContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+           "featuredCard"
+           "featuredCard"
+           "featuredCard";
+        min-height: 90vh;
+    }
+    .navContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+           "navigateLink navigateLink navigateLink navigateLink";
+        min-height: 5jkkvh;
+    }
+    .eyeFriendly {
+        color: #7FC95D;
+        font-size: 30px;
+    }
+    .featuredTitle {
+        font-size: 30px;
+    }
+    
+}
