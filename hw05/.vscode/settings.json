@@ -1,0 +1,4 @@
+{
+    "vim.easymotion": true,
+    "vim.handleKeys": { "<C-f>": false }
+}
