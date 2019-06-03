@@ -154,7 +154,7 @@ const likePhoto = (e) => {
    .then(response => response.json())
    .then(data => {
        appPhotos[activeCardID] = data;
-       document.querySelector('.likes').innerHTML = data.likes;
+       document.querySelector('.likes').innerHTML = 'Likes: ' + data.likes;
    });
 
 }
